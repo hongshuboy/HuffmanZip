@@ -4,7 +4,9 @@
 
 *Files and String zipper based on huffman codes*
 
-![starts](https://img.shields.io/github/stars/hongshuboy/[HuffmanZip](https://github.com/hongshuboy/HuffmanZip).svg?style=social)
+| Build                                                        | License                                        | Code Beat                                                    | Size                                                         | Language                                                     | Contributors                                                 |
+| ------------------------------------------------------------ | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![GitHub release (latest by date)](https://img.shields.io/github/v/release/hongshuboy/HuffmanZip) | ![Hex.pm](https://img.shields.io/hexpm/l/plug) | [![codebeat <br/>badge](https://codebeat.co/badges/32dc030c-9f15-4f40-ab0e-8c0250c2dbe3)](https://codebeat.co/projects/github-com-hongshuboy-huffmanzip-master) | ![GitHub repo size](https://img.shields.io/github/repo-size/hongshuboy/huffmanzip) | ![language java](https://img.shields.io/badge/language-java-black.svg) | ![GitHub contributors](https://img.shields.io/github/contributors/hongshuboy/huffmanzip) |
 
 - [x] 支持中文及其他语种 *Support Chinese and other languages*
 - [x] 支持单个文件压缩 *Support single file compression*
@@ -58,7 +60,7 @@ String s = Huffman.getStringCoder().decode(encodeResult);
 
 **功能二，文件压缩：使用下面两行代码即可实现对文件与文件夹的压缩和解压**
 
-**Function 2: File compression: Use the following two lines of code to compress and decompress files or folders**
+***Function 2: File compression: Use the following two lines of code to compress and decompress files or folders***
 
 ​	1.压缩文件，参数二为变长参数，可随意填写文件或文件夹
 
@@ -85,7 +87,7 @@ for (String path : paths) {
 
 **注意：**
 
-**warning**
+***warning***
 
 不能使用过于简单的文件或字符串进行压缩，比如一个txt文件内容全是1，否则将会抛出异常
 
