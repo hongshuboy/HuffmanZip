@@ -4,9 +4,10 @@
 
 *Files and String zipper based on huffman codes*
 
-| Build                                                        | License                                        | Code Beat                                                    | Size                                                         | Language                                                     | Contributors                                                 |
-| ------------------------------------------------------------ | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![GitHub release (latest by date)](https://img.shields.io/github/v/release/hongshuboy/HuffmanZip) | ![Hex.pm](https://img.shields.io/hexpm/l/plug) | [![codebeat <br/>badge](https://codebeat.co/badges/32dc030c-9f15-4f40-ab0e-8c0250c2dbe3)](https://codebeat.co/projects/github-com-hongshuboy-huffmanzip-master) | ![GitHub repo size](https://img.shields.io/github/repo-size/hongshuboy/huffmanzip) | ![language java](https://img.shields.io/badge/language-java-black.svg) | ![GitHub contributors](https://img.shields.io/github/contributors/hongshuboy/huffmanzip) |
+| License                                        | Code Beat                                                    | Language                                                     | Build                                                        | Size                                                         | Contributors                                                 |
+| ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Hex.pm](https://img.shields.io/hexpm/l/plug) | [![codebeat <br/>badge](https://codebeat.co/badges/32dc030c-9f15-4f40-ab0e-8c0250c2dbe3)](https://codebeat.co/projects/github-com-hongshuboy-huffmanzip-master) | ![language java](<https://img.shields.io/badge/java-v1.8-blue>) | ![GitHub release (latest by date)](https://img.shields.io/github/v/release/hongshuboy/HuffmanZip) | ![GitHub repo size](https://img.shields.io/github/repo-size/hongshuboy/huffmanzip) | ![GitHub contributors](https://img.shields.io/github/contributors/hongshuboy/huffmanzip) |
+
 
 - [x] 支持中文及其他语种 *Support Chinese and other languages*
 - [x] 支持单个文件压缩 *Support single file compression*
@@ -107,7 +108,9 @@ Email:hongshuboy@gmail.com
 
 ## 版权说明 License 
 
-该项目使用Apache License 2.0授权许可，详情请参阅 *LICENSE.md*
+本项目使用**Apache License 2.0**授权许可，详情请参阅 ***\LICENSE*** 和 ***\NOTICE***
 
-*hongshuboy/HuffmanZip is licensed under the Apache License 2.0,you can read LICENSE.md for more information*
+*hongshuboy/HuffmanZip is licensed under the Apache License 2.0,please read LICENSE and NOTICE for more information*
+
+Copyright ©2020 wangpeng(hongshu)
 
