@@ -9,11 +9,21 @@
 | ![Hex.pm](https://img.shields.io/hexpm/l/plug) | [![codebeat <br/>badge](https://codebeat.co/badges/32dc030c-9f15-4f40-ab0e-8c0250c2dbe3)](https://codebeat.co/projects/github-com-hongshuboy-huffmanzip-master) | ![language java](<https://img.shields.io/badge/java-v1.8-blue>) | ![GitHub release (latest by date)](https://img.shields.io/github/v/release/hongshuboy/HuffmanZip) | ![GitHub repo size](https://img.shields.io/github/repo-size/hongshuboy/huffmanzip) | ![GitHub contributors](https://img.shields.io/github/contributors/hongshuboy/huffmanzip) |
 
 
-- [x] 支持中文及其他语种 *Support Chinese and other languages*
-- [x] 支持单个文件压缩 *Support single file compression*
-- [x] 支持文件夹压缩（不压缩隐藏文件）*Support folder compression (will not compress hidden files)*
-- [x] 支持文件与文件夹混合压缩 *Supports mixed compression of files and folders*
-- [x] 支持不同路径的文件混合压缩 *Supports mixed compression of files with different paths*
+- [x] 完整支持字符串压缩与解压：支持中文及其他语种
+
+  *Full support for string compression and decompression & Support Chinese and other languages*
+
+- [x] 支持单个文件压缩  *Support single file compression*
+
+- [x] 支持文件夹压缩（不压缩隐藏文件） *Support folder compression (will not compress hidden files)*
+
+- [x] 支持文件与文件夹混合压缩  *Supports mixed compression of files and folders*
+
+- [x] 支持不同路径的文件混合压缩  *Supports mixed compression of files with different paths*
+
+- [x] 支持压缩到当前文件夹  *Supports compression to the current folder*
+
+- [x] 支持解压到当前文件夹  *Support extracting to the current folder*
 
 ## 上手指南 Getting Start
 
