@@ -161,6 +161,7 @@ public class FileCoderImp extends BaseDecoderImp<Byte> implements FileCoder {
             FileInputStream fileInputStream = new FileInputStream(filePath);
             ObjectInputStream inputStream = new ObjectInputStream(fileInputStream);
             List<FileEncodeResult> fileEncodeResults = (List<FileEncodeResult>) inputStream.readObject();
+            dst = prepareDst(filePath, dst);
             for (FileEncodeResult fileEncodeResult : fileEncodeResults) {
                 byte[] bytes = decodeFile(fileEncodeResult.getHuffmanCode(), fileEncodeResult.getZipBytes());
                 paths.add(writeToFile(dst, fileEncodeResult.getFileName(), bytes));
@@ -173,6 +174,25 @@ public class FileCoderImp extends BaseDecoderImp<Byte> implements FileCoder {
             e.printStackTrace();
         }
         return paths.toArray(new String[0]);
+    }
+
+    private String prepareDst(String filePath, String dst) {
+        //make a absolute path
+        int index = dst.lastIndexOf("\\");
+        if (index < 0 || index == dst.indexOf("\\")) {
+            dst = filePath.substring(0, filePath.lastIndexOf("\\") + 1) + dst;
+        }
+        logger.debug("dst absolute path is : " + dst);
+        //check if dst is a real directory
+        File target = new File(dst);
+        if (target.exists()) {
+            if (!target.isDirectory()) {
+                throw new RuntimeException("dst dir must be a folder");
+            }
+        } else {
+            target.mkdir();
+        }
+        return dst;
     }
 
     private String writeToFile(String dst, String fileName, byte[] bytes) {
