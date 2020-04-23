@@ -99,7 +99,7 @@ for (String path : paths) {
 
 **注意：**
 
-***warning***
+***Caution:***
 
 不能使用过于简单的文件或字符串进行压缩，比如一个txt文件内容全是1，否则将会抛出异常
 
