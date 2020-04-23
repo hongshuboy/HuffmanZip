@@ -18,6 +18,7 @@
 ## 上手指南 Getting Start
 
 接下来通过简单的两个例子，分别实现字符串和文件（夹）的压缩和解压
+
 *Next, through two simple examples, learn the compression and decompression of strings and files and folders*
 
 **功能一，字符串压缩：使用下面两行代码即可实现对字符串的压缩和解压**
@@ -95,7 +96,7 @@ for (String path : paths) {
 *Do not use too simple files or strings for compression,for example, the content of a txt file is 1,otherwise, an exception will be thrown*
 
 ```java
-throw new RuntimeException("Data is too single to compress");
+throw new RuntimeException("Data is too simple to compress");
 ```
 
 ## 作者 Author

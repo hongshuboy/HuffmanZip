@@ -32,7 +32,7 @@ public class HuffmanTreeMakerImp<T> implements HuffmanTreeMaker<T> {
     public Map<T, String> getHuffmanCode(Node<T> root) {
         Objects.requireNonNull(root, "huffman tree can not be null");
         if (root.getLeft() == null || root.getRight() == null) {
-            throw new RuntimeException("Data is too single to compress");
+            throw new RuntimeException("Data is too simple to compress");
         }
         Map<T, String> map = new HashMap<>();
         getHuffmanCode(root.getLeft(), 0, new StringBuilder(), map);
