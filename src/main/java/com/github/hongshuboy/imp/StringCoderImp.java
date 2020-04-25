@@ -2,12 +2,13 @@ package com.github.hongshuboy.imp;
 
 import com.github.hongshuboy.EncodeResult;
 import com.github.hongshuboy.StringCoder;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 
 public class StringCoderImp extends BaseDecoderImp<Character> implements StringCoder {
-    private Logger logger = Logger.getLogger(StringCoderImp.class);
+    private Logger logger = LogManager.getLogger(StringCoderImp.class);
 
     @Override
     @SuppressWarnings("unchecked")

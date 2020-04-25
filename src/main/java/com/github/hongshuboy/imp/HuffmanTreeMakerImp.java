@@ -1,7 +1,8 @@
 package com.github.hongshuboy.imp;
 
 import com.github.hongshuboy.HuffmanTreeMaker;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.text.MessageFormat;
 import java.util.*;
@@ -10,7 +11,7 @@ import java.util.*;
  * @param <T> Character for String, Byte for File
  */
 public class HuffmanTreeMakerImp<T> implements HuffmanTreeMaker<T> {
-    private Logger logger = Logger.getLogger(HuffmanTreeMakerImp.class);
+    private Logger logger = LogManager.getLogger(HuffmanTreeMakerImp.class);
 
     @Override
     public Node<T> createHuffmanTree(List<Node<T>> nodes) {

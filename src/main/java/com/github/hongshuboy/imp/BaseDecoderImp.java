@@ -1,12 +1,13 @@
 package com.github.hongshuboy.imp;
 
 import com.github.hongshuboy.BaseDecoder;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Map;
 
 public abstract class BaseDecoderImp<T> extends BaseDecoder<T> {
-    private Logger logger = Logger.getLogger(BaseDecoderImp.class);
+    private Logger logger = LogManager.getLogger(BaseDecoderImp.class);
 
     @Override
     public String bytesToString(byte[] bytes) {
