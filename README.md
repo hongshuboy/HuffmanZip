@@ -11,7 +11,7 @@
 
 - [x] 完整支持字符串压缩与解压：支持中文及其他语种
 
-  *Full support for string compression and decompression & Support Chinese and other languages*
+  *Full support for string compression and decompression & Support other languages*
 
 - [x] 支持单个文件压缩  *Support single file compression*
 
