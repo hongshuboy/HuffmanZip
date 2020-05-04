@@ -81,49 +81,6 @@ public class StringCoderImp extends BaseDecoderImp<Character> implements StringC
         return bytes;
     }
 
-    /*private Map<Character, String> getHuffmanCode(Node<Character> root) {
-        Objects.requireNonNull(root, "huffman tree can not be null");
-        Map<Character, String> map = new HashMap<>();
-        getHuffmanCode(root.getLeft(), 0, new StringBuilder(), map);
-        getHuffmanCode(root.getRight(), 1, new StringBuilder(), map);
-        logger.debug("\nhuffman code :");
-        map.forEach((k, v) -> {
-            logger.debug(MessageFormat.format("k:{0},v:{1}", k, v));
-        });
-        return map;
-    }*/
-
-/*    private Map<Character, String> getHuffmanCode(Node<Character> node, int val1, StringBuilder val2, Map<Character, String> map) {
-        StringBuilder stringBuilder = new StringBuilder(val2);
-        stringBuilder.append(val1);
-        if (node.getData() == null) {
-            if (node.getLeft() != null) {
-                getHuffmanCode(node.getLeft(), 0, stringBuilder, map);
-            }
-            if (node.getRight() != null) {
-                getHuffmanCode(node.getRight(), 1, stringBuilder, map);
-            }
-        } else {
-            map.put(node.getData(), stringBuilder.toString());
-        }
-        return map;
-    }*/
-
-    /*private Node<Character> createHuffmanTree(List<Node<Character>> nodes) {
-        while (nodes.size() > 1) {
-            Collections.sort(nodes);
-            Node<Character> left = nodes.get(0);
-            Node<Character> right = nodes.get(1);
-            Node<Character> parent = new Node<>(null, left.getValue() + right.getValue());
-            parent.setLeft(left);
-            parent.setRight(right);
-            nodes.remove(left);
-            nodes.remove(right);
-            nodes.add(parent);
-        }
-        return nodes.get(0);
-    }*/
-
     private List<Node<Character>> getNodes(char[] chars) {
         List<Node<Character>> list = new ArrayList<>(chars.length);
         Map<Character, Integer> map = new HashMap<>(chars.length * 2);
