@@ -6,3 +6,11 @@ pom和相关类文件		升级为log4j2
 1.2.1
 StringCoderImp		删除一处多余的注释
 README			修改一处介绍
+1.2.2
+（非核心修改，未测试）
+StringCoderImp		修改不规范的初始化写法
+FileCoderImp		
+EncodeResultImp		增加序列化兼容（此后版本）
+FileEncodeResult
+Node
+
