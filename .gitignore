@@ -26,3 +26,6 @@ hs_err_pid*
 .idea/
 huffman.iml
 target/
+
+#MarkDown
+README.assets/
