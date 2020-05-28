@@ -32,7 +32,7 @@ public class StringCoderImp extends BaseDecoderImp<Character> implements StringC
 
     @Override
     protected String unzip(String code, Map<Character, String> huffmanCode) {
-        Map<String, Character> map = new HashMap<>(huffmanCode.size());
+        Map<String, Character> map = new HashMap<>();
         huffmanCode.forEach((k, v) -> map.put(v, k));
         StringBuilder stringBuilder = new StringBuilder();
         String s;
@@ -83,7 +83,7 @@ public class StringCoderImp extends BaseDecoderImp<Character> implements StringC
 
     private List<Node<Character>> getNodes(char[] chars) {
         List<Node<Character>> list = new ArrayList<>(chars.length);
-        Map<Character, Integer> map = new HashMap<>(chars.length * 2);
+        Map<Character, Integer> map = new HashMap<>();
         for (char c : chars) {
             Integer count = map.get(c);
             if (count == null) {

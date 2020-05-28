@@ -114,7 +114,7 @@ public class FileCoderImp extends BaseDecoderImp<Byte> implements FileCoder {
 
     private List<Node<Byte>> getNodes(byte[] bytes) {
         List<Node<Byte>> list = new ArrayList<>(bytes.length);
-        Map<Byte, Integer> map = new HashMap<>(bytes.length * 2);
+        Map<Byte, Integer> map = new HashMap<>();
         for (byte c : bytes) {
             Integer count = map.get(c);
             if (count == null) {
@@ -233,7 +233,7 @@ public class FileCoderImp extends BaseDecoderImp<Byte> implements FileCoder {
 
     @Override
     protected List<Byte> unzip(String code, Map<Byte, String> huffmanCode) {
-        Map<String, Byte> map = new HashMap<>(huffmanCode.size());
+        Map<String, Byte> map = new HashMap<>();
         List<Byte> byteList = new LinkedList<>();
         huffmanCode.forEach((k, v) -> map.put(v, k));
         String s;
