@@ -6,7 +6,7 @@
 
     <groupId>com.github.hongshuboy</groupId>
     <artifactId>huffman</artifactId>
-    <version>1.2-RELEASE</version>
+    <version>1.2.2-RELEASE</version>
     <dependencies>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
