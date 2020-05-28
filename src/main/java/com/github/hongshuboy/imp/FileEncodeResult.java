@@ -1,9 +1,9 @@
 package com.github.hongshuboy.imp;
 
-import java.io.Serializable;
 import java.util.Map;
 
-public class FileEncodeResult extends EncodeResultImp<Byte> implements Serializable {
+public class FileEncodeResult extends EncodeResultImp<Byte> {
+    private static final long serialVersionUID = 1L;
     private String fileName;
 
     public FileEncodeResult() {

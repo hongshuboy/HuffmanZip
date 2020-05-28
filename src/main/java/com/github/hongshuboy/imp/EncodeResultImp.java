@@ -2,11 +2,10 @@ package com.github.hongshuboy.imp;
 
 import com.github.hongshuboy.EncodeResult;
 
-import java.io.Serializable;
 import java.util.Map;
 
-public class EncodeResultImp<T> implements EncodeResult, Serializable {
-
+public class EncodeResultImp<T> implements EncodeResult{
+    private static final long serialVersionUID = 1L;
     private Map<T, String> huffmanCode;
     private byte[] bytes;
 

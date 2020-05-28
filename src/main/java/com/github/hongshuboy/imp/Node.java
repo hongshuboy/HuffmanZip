@@ -3,6 +3,7 @@ package com.github.hongshuboy.imp;
 import java.io.Serializable;
 
 public class Node<T> implements Comparable<Node<T>>, Serializable {
+    private static final long serialVersionUID = 1L;
     private T data;
     private int value; //权重
     private Node left;
