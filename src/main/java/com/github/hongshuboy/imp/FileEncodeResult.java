@@ -2,15 +2,12 @@ package com.github.hongshuboy.imp;
 
 import java.util.Map;
 
-public class FileEncodeResult extends EncodeResultImp<Byte> {
-    private static final long serialVersionUID = 1L;
+public class FileEncodeResult extends EncodeResultImp {
+    private static final long serialVersionUID = 2L;
     private String fileName;
 
-    public FileEncodeResult() {
-    }
-
-    public FileEncodeResult(Map<Byte, String> huffmanCode, byte[] bytes, String fileName) {
-        super(huffmanCode, bytes);
+    public FileEncodeResult(Map<Byte, String> huffmanCode, byte[] bytes, String fileName, int lastByteLength) {
+        super(huffmanCode, bytes, (short) lastByteLength);
         this.fileName = fileName;
     }
 

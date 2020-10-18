@@ -4,11 +4,10 @@ import com.github.hongshuboy.imp.FileEncodeResult;
 
 import java.util.List;
 
-public interface FileCoder extends Coder {
+public interface FileCoder {
     /**
      * @param fileName 压缩后的文件名，也可以是全路径，默认压缩到当前路径
-     * @param paths    可以是文件夹或者文件
-     * @return =============================
+     * @param paths    可以是文件夹或者文件，待压缩的文件或文件夹
      */
     List<FileEncodeResult> encode(String fileName, String... paths);
 

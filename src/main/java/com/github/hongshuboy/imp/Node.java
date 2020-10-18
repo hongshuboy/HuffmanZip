@@ -2,9 +2,9 @@ package com.github.hongshuboy.imp;
 
 import java.io.Serializable;
 
-public class Node<T> implements Comparable<Node<T>>, Serializable {
-    private static final long serialVersionUID = 1L;
-    private T data;
+public class Node implements Comparable<Node>, Serializable {
+    private static final long serialVersionUID = 2L;
+    private Byte data;
     private int value; //权重
     private Node left;
     private Node right;
@@ -12,16 +12,16 @@ public class Node<T> implements Comparable<Node<T>>, Serializable {
     public Node() {
     }
 
-    public Node(T data, int value) {
+    public Node(Byte data, int value) {
         this.data = data;
         this.value = value;
     }
 
-    public T getData() {
+    public Byte getData() {
         return data;
     }
 
-    public void setData(T data) {
+    public void setData(Byte data) {
         this.data = data;
     }
 
@@ -58,7 +58,7 @@ public class Node<T> implements Comparable<Node<T>>, Serializable {
     }
 
     @Override
-    public int compareTo(Node<T> o) {
+    public int compareTo(Node o) {
         return this.value - o.value;
     }
 }

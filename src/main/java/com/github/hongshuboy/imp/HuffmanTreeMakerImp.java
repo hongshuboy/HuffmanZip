@@ -1,25 +1,19 @@
 package com.github.hongshuboy.imp;
 
 import com.github.hongshuboy.HuffmanTreeMaker;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
-import java.text.MessageFormat;
 import java.util.*;
 
-/**
- * @param <T> Character for String, Byte for File
- */
-public class HuffmanTreeMakerImp<T> implements HuffmanTreeMaker<T> {
-    private Logger logger = LogManager.getLogger(HuffmanTreeMakerImp.class);
+public class HuffmanTreeMakerImp implements HuffmanTreeMaker {
 
     @Override
-    public Node<T> createHuffmanTree(List<Node<T>> nodes) {
+    public Node createHuffmanTree(byte[] bytes) {
+        List<Node> nodes = getHuffmanNodes(bytes);
         while (nodes.size() > 1) {
             Collections.sort(nodes);
-            Node<T> left = nodes.get(0);
-            Node<T> right = nodes.get(1);
-            Node<T> parent = new Node<>(null, left.getValue() + right.getValue());
+            Node left = nodes.get(0);
+            Node right = nodes.get(1);
+            Node parent = new Node(null, left.getValue() + right.getValue());
             parent.setLeft(left);
             parent.setRight(right);
             nodes.remove(left);
@@ -30,22 +24,18 @@ public class HuffmanTreeMakerImp<T> implements HuffmanTreeMaker<T> {
     }
 
     @Override
-    public Map<T, String> getHuffmanCode(Node<T> root) {
+    public Map<Byte, String> getHuffmanCode(Node root) {
         Objects.requireNonNull(root, "huffman tree can not be null");
         if (root.getLeft() == null || root.getRight() == null) {
             throw new RuntimeException("Data is too simple to compress");
         }
-        Map<T, String> map = new HashMap<>();
+        Map<Byte, String> map = new HashMap<>();
         getHuffmanCode(root.getLeft(), 0, new StringBuilder(), map);
         getHuffmanCode(root.getRight(), 1, new StringBuilder(), map);
-        logger.debug("\nhuffman code :");
-        map.forEach((k, v) -> {
-            logger.debug(MessageFormat.format("k:{0},v:{1}", k, v));
-        });
         return map;
     }
 
-    private Map<T, String> getHuffmanCode(Node<T> node, int val1, StringBuilder val2, Map<T, String> map) {
+    private Map<Byte, String> getHuffmanCode(Node node, int val1, StringBuilder val2, Map<Byte, String> map) {
         StringBuilder stringBuilder = new StringBuilder(val2);
         stringBuilder.append(val1);
         if (node.getData() == null) {
@@ -59,5 +49,18 @@ public class HuffmanTreeMakerImp<T> implements HuffmanTreeMaker<T> {
             map.put(node.getData(), stringBuilder.toString());
         }
         return map;
+    }
+
+    /**
+     * 获得带权结点
+     */
+    public List<Node> getHuffmanNodes(byte[] bytes) {
+        List<Node> list = new ArrayList<>(bytes.length);
+        Map<Byte, Integer> map = new HashMap<>();
+        for (byte c : bytes) {
+            map.merge(c, 1, Integer::sum);
+        }
+        map.forEach((k, v) -> list.add(new Node(k, v)));
+        return list;
     }
 }

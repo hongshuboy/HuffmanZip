@@ -1,17 +1,27 @@
 1.1
-pom			���Ӳ�������ڴ��ʱ�ṩsourceԴ��
-FileCoderImp		֧�ֽ�ѹʱ��д��ѹ��ַ������ѹ����ǰ�ļ��У�1.0�汾�Ѿ��ṩ��ѹ��ʱ�ļ�д���ܣ�
+pom			        增加插件，用于打包时提供source源码
+FileCoderImp		支持解压时简写解压地址，即解压到当前文件夹（1.0版本已经提供了压缩时的简写功能）
+
 1.2
-pom��������ļ�		����Ϊlog4j2
+pom和相关类文件		升级为log4j2
+
 1.2.1
-���Ǻ����޸ģ�δ���ԣ�
-StringCoderImp		ɾ��һ�������ע��
-README			�޸�һ������
+（非核心修改，未测试）
+StringCoderImp		删除一处多余的注释
+README			    修改一处介绍
+
 1.2.2
-���Ǻ����޸ģ�δ���ԣ�
-StringCoderImp		�޸Ĳ��淶�ĳ�ʼ��д��
+（非核心修改，未测试）
+StringCoderImp		修改不规范的初始化写法
 FileCoderImp		
-EncodeResultImp		�������л����ݣ��˺�汾��
+EncodeResultImp		增加序列化兼容（此后版本）
 FileEncodeResult
 Node
+
+2.0
+*                   项目重构
+                        - 1.更改类的继承结构
+                        - 2.统一粒度，字符串压缩与解压使用Byte
+                        - 3.BUG修复，解决Last Byte在低概率下可能造成的问题
+                        - 4.删除Log4j2
 
