@@ -1,16 +1,16 @@
 package com.github.hongshuboy.imp;
 
-import com.github.hongshuboy.BaseDecoder;
+import com.github.hongshuboy.BaseCoder;
 import com.github.hongshuboy.EncodeResult;
 import com.github.hongshuboy.StringCoder;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
-import static com.github.hongshuboy.BytesUtils.bytesToString;
-import static com.github.hongshuboy.BytesUtils.unboxBytes;
+import static com.github.hongshuboy.utils.BytesUtils.bytesToString;
+import static com.github.hongshuboy.utils.BytesUtils.unboxBytes;
 
-public class StringCoderImp extends BaseDecoder implements StringCoder {
+public class StringCoderImp extends BaseCoder implements StringCoder {
 
     @Override
     @SuppressWarnings("unchecked")
@@ -19,7 +19,7 @@ public class StringCoderImp extends BaseDecoder implements StringCoder {
         HuffmanTreeMakerImp characterHuffmanTreeMakerImp = new HuffmanTreeMakerImp();
         Node root = characterHuffmanTreeMakerImp.createHuffmanTree(bytes);
         Map<Byte, String> code = characterHuffmanTreeMakerImp.getHuffmanCode(root);
-        BaseDecoder.BytesAndLastLength bytesAndLastLength = zip(bytes, code);
+        BaseCoder.BytesAndLastLength bytesAndLastLength = zip(bytes, code);
         return new EncodeResultImp(code, bytesAndLastLength.bytes, bytesAndLastLength.lastByteLength);
     }
 

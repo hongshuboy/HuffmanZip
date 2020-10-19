@@ -1,11 +1,13 @@
 package com.github.hongshuboy;
 
+import com.github.hongshuboy.utils.BytesUtils;
+
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-public abstract class BaseDecoder {
+public abstract class BaseCoder {
 
     protected BytesAndLastLength zip(byte[] bytes, Map<Byte, String> code) {
         StringBuilder stringBuilder = new StringBuilder();
