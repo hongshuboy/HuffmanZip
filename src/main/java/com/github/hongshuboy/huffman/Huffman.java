@@ -1,7 +1,7 @@
-package com.github.hongshuboy;
+package com.github.hongshuboy.huffman;
 
-import com.github.hongshuboy.imp.FileCoderImp;
-import com.github.hongshuboy.imp.StringCoderImp;
+import com.github.hongshuboy.huffman.imp.FileCoderImp;
+import com.github.hongshuboy.huffman.imp.StringCoderImp;
 /**
  *  _                                _
  * | |                              | |

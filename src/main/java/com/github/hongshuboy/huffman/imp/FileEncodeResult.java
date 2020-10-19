@@ -1,4 +1,4 @@
-package com.github.hongshuboy.imp;
+package com.github.hongshuboy.huffman.imp;
 
 import java.util.Map;
 

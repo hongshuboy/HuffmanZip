@@ -1,6 +1,6 @@
-package com.github.hongshuboy.imp;
+package com.github.hongshuboy.huffman.imp;
 
-import com.github.hongshuboy.EncodeResult;
+import com.github.hongshuboy.huffman.EncodeResult;
 
 import java.util.Map;
 

@@ -1,6 +1,6 @@
-package com.github.hongshuboy.imp;
+package com.github.hongshuboy.huffman.imp;
 
-import com.github.hongshuboy.HuffmanTreeMaker;
+import com.github.hongshuboy.huffman.HuffmanTreeMaker;
 
 import java.util.*;
 

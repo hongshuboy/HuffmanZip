@@ -1,4 +1,4 @@
-package com.github.hongshuboy.utils;
+package com.github.hongshuboy.huffman.utils;
 
 public class BytesUtils {
 

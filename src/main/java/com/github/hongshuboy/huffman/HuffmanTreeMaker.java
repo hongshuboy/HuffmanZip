@@ -1,7 +1,7 @@
-package com.github.hongshuboy;
+package com.github.hongshuboy.huffman;
 
 
-import com.github.hongshuboy.imp.Node;
+import com.github.hongshuboy.huffman.imp.Node;
 
 import java.util.Map;
 

@@ -1,14 +1,14 @@
-package com.github.hongshuboy.imp;
+package com.github.hongshuboy.huffman.imp;
 
-import com.github.hongshuboy.BaseCoder;
-import com.github.hongshuboy.EncodeResult;
-import com.github.hongshuboy.StringCoder;
+import com.github.hongshuboy.huffman.BaseCoder;
+import com.github.hongshuboy.huffman.EncodeResult;
+import com.github.hongshuboy.huffman.StringCoder;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
-import static com.github.hongshuboy.utils.BytesUtils.bytesToString;
-import static com.github.hongshuboy.utils.BytesUtils.unboxBytes;
+import static com.github.hongshuboy.huffman.utils.BytesUtils.bytesToString;
+import static com.github.hongshuboy.huffman.utils.BytesUtils.unboxBytes;
 
 public class StringCoderImp extends BaseCoder implements StringCoder {
 

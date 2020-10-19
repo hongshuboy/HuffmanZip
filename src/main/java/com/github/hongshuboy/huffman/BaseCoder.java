@@ -1,6 +1,6 @@
-package com.github.hongshuboy;
+package com.github.hongshuboy.huffman;
 
-import com.github.hongshuboy.utils.BytesUtils;
+import com.github.hongshuboy.huffman.utils.BytesUtils;
 
 import java.util.HashMap;
 import java.util.LinkedList;

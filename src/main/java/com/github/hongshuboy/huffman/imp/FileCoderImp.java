@@ -1,7 +1,7 @@
-package com.github.hongshuboy.imp;
+package com.github.hongshuboy.huffman.imp;
 
-import com.github.hongshuboy.BaseCoder;
-import com.github.hongshuboy.FileCoder;
+import com.github.hongshuboy.huffman.BaseCoder;
+import com.github.hongshuboy.huffman.FileCoder;
 
 import java.io.*;
 import java.nio.file.Path;
@@ -10,8 +10,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import static com.github.hongshuboy.utils.BytesUtils.bytesToString;
-import static com.github.hongshuboy.utils.BytesUtils.unboxBytes;
+import static com.github.hongshuboy.huffman.utils.BytesUtils.bytesToString;
+import static com.github.hongshuboy.huffman.utils.BytesUtils.unboxBytes;
 
 public class FileCoderImp extends BaseCoder implements FileCoder {
 

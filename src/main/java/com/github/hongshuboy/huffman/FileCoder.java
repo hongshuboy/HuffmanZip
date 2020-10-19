@@ -1,6 +1,6 @@
-package com.github.hongshuboy;
+package com.github.hongshuboy.huffman;
 
-import com.github.hongshuboy.imp.FileEncodeResult;
+import com.github.hongshuboy.huffman.imp.FileEncodeResult;
 
 import java.util.List;
 
