@@ -4,7 +4,7 @@
 
 *Files and String zipper based on huffman codes*
 
-| License                                        | Code Beat                                                    | Language                                                     | Build                                                        | Size                                                         | Contributors                                                 |
+| License                                        | CodeBeat                                                    | Language                                                     | Build                                                        | Size                                                         | Contributors                                                 |
 | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![Hex.pm](https://img.shields.io/hexpm/l/plug) | [![codebeat <br/>badge](https://codebeat.co/badges/32dc030c-9f15-4f40-ab0e-8c0250c2dbe3)](https://codebeat.co/projects/github-com-hongshuboy-huffmanzip-master) | ![language java](<https://img.shields.io/badge/java-v1.8-blue>) | ![GitHub release (latest by date)](https://img.shields.io/github/v/release/hongshuboy/HuffmanZip) | ![GitHub repo size](https://img.shields.io/github/repo-size/hongshuboy/huffmanzip) | ![GitHub contributors](https://img.shields.io/github/contributors/hongshuboy/huffmanzip) |
 
