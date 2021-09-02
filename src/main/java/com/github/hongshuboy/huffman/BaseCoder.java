@@ -2,10 +2,7 @@ package com.github.hongshuboy.huffman;
 
 import com.github.hongshuboy.huffman.utils.BytesUtils;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public abstract class BaseCoder {
 
@@ -45,6 +42,7 @@ public abstract class BaseCoder {
                         t1 = map.get(val.toString());
                     }
                     byteList.add(t1);
+                    byteList.removeAll(Collections.singletonList(null));
                     return byteList.toArray(new Byte[]{});
                 }
             }
